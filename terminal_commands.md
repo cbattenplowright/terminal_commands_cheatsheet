@@ -113,8 +113,6 @@ There are various rules for patterns as follows:
 - You can end patterns with a `/`to specify a directory
 - You can negate a pattern with a `!`
 
-<br>
-
 ```
 touch .gitignore
 ```
