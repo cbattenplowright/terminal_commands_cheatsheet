@@ -75,7 +75,7 @@ git log
 ```
 Displays the git commit history <br><br>
 
-# Linking a repository to Github using terminal
+## Linking a repository to Github using terminal
 
 ```
 git remote add <name> <https/ssh link>
