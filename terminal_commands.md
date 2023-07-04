@@ -96,3 +96,49 @@ Creates a clone of a repository or branch into a newly created directory on the 
 git pull origin main
 ```
 Brings changes of the remote repository into the clone repository
+
+<br>
+
+## Ignoring files and directories
+
+Sometimes you do not want Git to commit certain file classes. Generally these are generated files such as log files or system generated files. You can create a `.gitignore`file listing patterns matching the file patterns. Setting a `.gitignore` file before starting a project is normally a good idea to save a file being created and then being accidentally committed.
+
+There are multiple locations to have Git ignore certain files see: http://vinyll.scopyleft.fr/using-gitignore-the-right-way/ for more information regarding .gitignore files in project directories and a the root directory.
+
+There are various rules for patterns as follows:
+
+- Blank lines or lines starting with `#` are ignored
+- Standard glob patterns work, and are applied recursively
+- You can start patterns with a `/`to avoid recursively
+- You can end patterns with a `/`to specify a directory
+- You can negate a pattern with a `!`
+
+<br>
+
+```
+touch .gitignore
+```
+Creates the .gitignore file to load and input the file patterns
+
+Example of a .gitignore file:
+````
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+
+#credit git-scm.com
+```
