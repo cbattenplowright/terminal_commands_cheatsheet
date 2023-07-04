@@ -44,6 +44,55 @@ Below are some core commands you should know for navigating around the termianl 
 
 <br>
 
+# Git terminal commands
 
+### Below are some useful commands when interacting with the git version control system in the terminal
 
+<br> 
 
+```
+git init 
+```
+### Initialises a git repository in the current directory <br><br>
+
+```
+git status
+```
+### Gives the status of the current working tree <br><br>
+
+```
+git add <filename>
+```
+### Used before committing after making changes to the working tree. Stages the content by updating the index in the working tree. <br><br>
+
+```
+git commit -m "file commit message here"
+```
+### Commits the change to the repository with a message <br><br>
+
+```
+git log
+```
+### Displays the git commit history <br><br>
+
+## Linking a repository to Github using terminal
+
+```
+git remote add <name> <https/ssh link>
+```
+### Adds a remote repository named \<name> by convention we tend to use ***origin*** at the URL provided <br><br>
+
+```
+git push origin main
+```
+### Pushes the contents of the main branch to the remote repository, in this case origin. <br><br>
+
+```
+git clone <https/ssh link>
+```
+### Creates a clone of a repository or branch into a newly created directory on the local machine <br><br>
+
+```
+git pull origin main
+```
+### Brings changes of the remote repository into the clone repository
