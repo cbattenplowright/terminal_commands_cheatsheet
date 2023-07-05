@@ -75,6 +75,11 @@ git log
 ```
 Displays the git commit history <br><br>
 
+```
+git log --raw
+```
+Provides details on exactly what files were changed within the repository <br><br>
+
 ## Linking a repository to Github using terminal
 
 ```
