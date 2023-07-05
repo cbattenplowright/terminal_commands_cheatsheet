@@ -103,7 +103,7 @@ Brings changes of the remote repository into the clone repository
 
 Sometimes you do not want Git to commit certain file classes. Generally these are generated files such as log files or system generated files. You can create a `.gitignore`file listing patterns matching the file patterns. Setting a `.gitignore` file before starting a project is normally a good idea to save a file being created and then being accidentally committed.
 
-There are multiple locations to have Git ignore certain files see: http://vinyll.scopyleft.fr/using-gitignore-the-right-way/ for more information regarding .gitignore files in project directories and a the root directory.
+There are multiple locations to have Git ignore certain files see: http://vinyll.scopyleft.fr/using-gitignore-the-right-way/ for more information regarding .gitignore files in project directories and the root directory.
 
 There are various rules for patterns as follows:
 
